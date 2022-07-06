@@ -32,11 +32,9 @@ body {
     flex-shrink: 0;
 }
 
-.col-fix {
-    /* TODO: DESKTOP SIZE
-    flex-basis: 15.25rem; */
-    flex-basis: 0;
-}
+/* .col-fix {
+    
+} */
 
 .col-grow {
     flex-basis: 0;
@@ -69,6 +67,31 @@ TOP SITE - MAIN CONTAINER
 
 .main-container .sidebar {
     background-color: #000;
+}
+
+.sidebar {
+    padding: 0.5rem 1rem;
+}
+
+.sidebar ul {
+    gap: 0.5rem;
+}
+
+.sidebar li img {
+    display: block;
+    width: 2rem;
+}
+
+.sidebar li:first-child img {
+    filter: invert(1);
+}
+
+.sidebar li span {
+    display: none;
+}
+
+.sidebar .sidebar-body {
+    display: none;
 }
 
 /******************************************************
@@ -139,9 +162,9 @@ body.debug {
     padding: 2rem;
 }
 
-.debug .sidebar {
+/* .debug .sidebar {
     padding: 1rem;
-}
+} */
 
 .debug .upgrade {
     padding: 2rem;
