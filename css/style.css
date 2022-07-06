@@ -148,6 +148,10 @@ TOP SITE - MAIN CONTAINER
     align-items: center;
 }
 
+.sidebar .sidebar-footer figure * {
+    vertical-align: middle;
+}
+
 .sidebar .sidebar-footer figcaption {
     display: none;
     color: #FFF;
@@ -300,7 +304,7 @@ TOP SITE - MAIN CONTAINER
 } */
 
 body.debug {
-    /* color: blue; */
+    color: blue;
 }
 
 .debug .player {
