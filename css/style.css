@@ -1,0 +1,74 @@
+/******************************************************
+    REGOLE GENERALI
+*******************************************************/
+
+:root {
+    --blue: #0084FD;
+    --light-blue: #B5DDFF;
+    --purple: #9792E4;
+    --yellow: #FDC15F;
+    --dark-grey: #333333;
+    --links-color: #827EBF;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-col {
+    flex-direction: column;
+}
+
+.col-col-reverse {
+    flex-direction: column-reverse;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container-small {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.button {
+    background-color: #FFF;
+    border-radius: 20px;
+    color: #000;
+    padding: 0.5em 0.8em;
+}
+
+.btn__large {
+    padding: 0.5em 3em;
+}
+
+.btn__blue {
+    background-color: var(--blue);
+    color: #FFF;
+}
+
+.btn__purple {
+    background-color: var(--purple);
+    color: #FFF;
+}
+
+section:nth-child(even) {
+    background-color: var(--purple);
+}
+
+.card {
+    border-radius: 10px;
+    padding: 35px 30px 0;
+    gap: 2rem;
+    height: 100%;
+    line-height: 2rem;
+}
