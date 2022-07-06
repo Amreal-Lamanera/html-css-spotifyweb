@@ -95,11 +95,19 @@ TOP SITE - MAIN CONTAINER
 .main-container .container {
     background-color: var(--main-color);
     overflow: auto;
+    position: relative;
 }
 
 /******************************************************
     CONTAINER - NAV
 *******************************************************/
+
+.container .container-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+}
 
 /******************************************************
     CONTAINER - CONTENT
