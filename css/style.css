@@ -94,6 +94,7 @@ TOP SITE - MAIN CONTAINER
 
 .main-container .container {
     background-color: var(--main-color);
+    overflow: auto;
 }
 
 /******************************************************
@@ -104,9 +105,7 @@ TOP SITE - MAIN CONTAINER
     CONTAINER - CONTENT
 *******************************************************/
 
-.container .container-content {
-    overflow: auto;
-}
+
 
 /******************************************************
     ASIDE PLAYER
@@ -126,6 +125,10 @@ TOP SITE - MAIN CONTAINER
 
 body.debug {
     color: blue;
+}
+
+.debug .player {
+    padding: 2rem;
 }
 
 .debug .sidebar {
