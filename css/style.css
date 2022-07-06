@@ -160,6 +160,11 @@ TOP SITE - MAIN CONTAINER
 
 .player {
     background-color: var(--grey);
+    /* Restringendo in altezza arriverà ad essere l'unico elemento visibile */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .player .col-mid {
@@ -223,7 +228,7 @@ body.debug {
 }
 
 .debug .player {
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 /* .debug .sidebar {
