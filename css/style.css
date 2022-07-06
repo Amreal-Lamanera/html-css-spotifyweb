@@ -65,12 +65,11 @@ TOP SITE - MAIN CONTAINER
     HEADER - SIDEBAR
 *******************************************************/
 
-.main-container .sidebar {
-    background-color: #000;
-}
-
 .sidebar {
+    background-color: #000;
     padding: 0.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sidebar ul {
@@ -113,6 +112,54 @@ TOP SITE - MAIN CONTAINER
 .sidebar .sidebar-body {
     display: none;
 }
+
+.sidebar .download * {
+    filter: invert(0.5);
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.sidebar .download .container-arrow {
+    /* margin-right: 1rem; */
+    margin-bottom: 2rem;
+    border: 1.5px solid #000;
+    border-radius: 100%;
+    display: inline-block;
+    width: 1rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.sidebar .download span {
+    display: none;
+}
+
+.sidebar .download::after {
+    content: "";
+    border-bottom: 1px solid #666;
+    display: block;
+    margin: 1rem 0;
+    width: 12rem;
+    display: none;
+}
+
+.sidebar .sidebar-footer {
+    align-items: center;
+}
+
+.sidebar .sidebar-footer figcaption {
+    display: none;
+    color: #FFF;
+}
+
+.sidebar .sidebar-footer img {
+    background-color: grey;
+    border-radius: 50%;
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
 
 /******************************************************
     MAIN - MAIN
@@ -196,8 +243,12 @@ TOP SITE - MAIN CONTAINER
 
 @media screen and (min-width: 639px) {
 
+    /******************************************************
+        HEADER - SIDEBAR
+    *******************************************************/
+
     .sidebar {
-        padding-right: 4rem;
+        align-items: flex-start;
     }
 
     .sidebar li a span,
@@ -213,6 +264,31 @@ TOP SITE - MAIN CONTAINER
         padding: 1rem 0 1rem;
     }
 
+    .sidebar .sidebar-body {
+        display: block;
+    }
+
+    .sidebar .download span {
+        display: inline;
+    }
+
+    .sidebar .download::after {
+        display: block;
+    }
+
+    .sidebar .sidebar-footer {
+        align-items: flex-start;
+    }
+
+    .sidebar .download .container-arrow {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .sidebar .sidebar-footer figcaption {
+        display: inline;
+    }
+
 }
 
 /******************************************************
@@ -224,7 +300,7 @@ TOP SITE - MAIN CONTAINER
 } */
 
 body.debug {
-    color: blue;
+    /* color: blue; */
 }
 
 .debug .player {
