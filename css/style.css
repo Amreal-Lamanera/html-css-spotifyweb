@@ -28,6 +28,21 @@ body {
     flex-direction: column-reverse;
 }
 
+.no-shrink {
+    flex-shrink: 0;
+}
+
+.col-fix {
+    /* TODO: DESKTOP SIZE
+    flex-basis: 15.25rem; */
+    flex-basis: 0;
+}
+
+.col-grow {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
 .button {
     background-color: transparent;
     border-radius: 20px;
@@ -68,12 +83,29 @@ TOP SITE - MAIN CONTAINER
     background-color: var(--dark);
 }
 
+/* Con il contenuto non servirà */
+/* .main-container .upgrade.col-fix {
+    flex-basis: 5.5rem;
+} */
+
 /******************************************************
     SECTION - CONTAINER
 *******************************************************/
 
 .main-container .container {
     background-color: var(--main-color);
+}
+
+/******************************************************
+    CONTAINER - NAV
+*******************************************************/
+
+/******************************************************
+    CONTAINER - CONTENT
+*******************************************************/
+
+.container .container-content {
+    overflow: auto;
 }
 
 /******************************************************
@@ -88,10 +120,22 @@ TOP SITE - MAIN CONTAINER
     TODO: DEBUG RULES
 *******************************************************/
 
-body.debug>* {
-    /* padding: 50px; */
-}
+/* .debug .main-main {
+    background-color: aqua;
+} */
 
 body.debug {
     color: blue;
+}
+
+.debug .sidebar {
+    padding: 1rem;
+}
+
+.debug .upgrade {
+    padding: 2rem;
+}
+
+.debug .container-nav {
+    padding: 1rem;
 }
