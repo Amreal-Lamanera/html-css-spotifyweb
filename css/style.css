@@ -43,7 +43,7 @@ body {
 
 .button {
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 80px;
     color: #FFF;
     padding: 1em 2em;
     border: 1px solid currentColor;
@@ -86,6 +86,10 @@ TOP SITE - MAIN CONTAINER
     filter: invert(1);
 }
 
+.sidebar li:nth-child(n+1) img {
+    filter: invert(0.2);
+}
+
 .sidebar li span {
     display: none;
 }
@@ -104,12 +108,8 @@ TOP SITE - MAIN CONTAINER
 
 .main-container .upgrade {
     background-color: var(--dark);
+    justify-content: flex-end;
 }
-
-/* Con il contenuto non servirà */
-/* .main-container .upgrade.col-fix {
-    flex-basis: 5.5rem;
-} */
 
 /******************************************************
     SECTION - CONTAINER
