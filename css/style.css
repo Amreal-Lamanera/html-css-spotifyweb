@@ -161,7 +161,7 @@ TOP SITE - MAIN CONTAINER
 .player {
     background-color: var(--grey);
     /* Restringendo in altezza arriverà ad essere l'unico elemento visibile */
-    position: fixed;
+    position: sticky;
     bottom: 0;
     right: 0;
     left: 0;
