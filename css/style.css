@@ -260,8 +260,20 @@ TOP SITE - MAIN CONTAINER
     left: 0;
     color: #FFF;
     padding: 1rem 0;
+    align-items: center;
     /* TODO: VERIFICARE SE SERVE */
     /* min-height: 90px; */
+}
+
+.player .song {
+    align-items: center;
+
+}
+
+.player .song__img {
+    width: 2.75rem;
+    gap: 0.75rem;
+    align-items: center;
 }
 
 .player .col:not([class*="fake-player"]) {
