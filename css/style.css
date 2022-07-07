@@ -163,7 +163,7 @@ TOP SITE - MAIN CONTAINER
     gap: 1.5rem;
 }
 
-.sidebar .download {
+.sidebar .download a {
     gap: 0.5rem;
 }
 
@@ -318,6 +318,10 @@ TOP SITE - MAIN CONTAINER
     display: flex;
     width: 2rem;
     height: 2rem;
+}
+
+.player .fake-player__buttons li {
+    cursor: pointer;
 }
 
 .player .col-mid {
