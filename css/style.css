@@ -414,7 +414,7 @@ TOP SITE - MAIN CONTAINER
 .player .fake-player__bar .fake-bar {
     margin: 0 1rem;
     flex-grow: 1;
-    max-width: 600px;
+    max-width: 26.75rem;
 }
 
 .player .fake-player__bar .fake-bar__inside {
