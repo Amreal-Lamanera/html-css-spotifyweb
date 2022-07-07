@@ -288,7 +288,7 @@ TOP SITE - MAIN CONTAINER
     right: 0;
     left: 0;
     color: #FFF;
-    padding: 1rem 0;
+    padding: 0.5rem;
     align-items: center;
     /* TODO: VERIFICARE SE SERVE */
     /* min-height: 90px; */
@@ -306,6 +306,11 @@ TOP SITE - MAIN CONTAINER
 .player .song__img {
     gap: 0.75rem;
     align-items: center;
+}
+
+.player .song__img .song__img__desc span {
+    font-size: 1rem;
+    filter: invert(0.6);
 }
 
 .player .song__buttons {
@@ -339,9 +344,8 @@ TOP SITE - MAIN CONTAINER
 }
 
 .player .col-mid {
-    padding: 0 2.25rem;
     gap: 1rem;
-    width: 33rem;
+    width: 195px;
     margin: 0 auto;
 }
 
