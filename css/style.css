@@ -276,7 +276,7 @@ TOP SITE - MAIN CONTAINER
     background-color: var(--main-color);
     color: var(--light-grey);
     font-weight: bold;
-    padding: 0 2rem 2rem 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .container-nav .nav-list {
