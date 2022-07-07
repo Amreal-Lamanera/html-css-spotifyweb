@@ -299,6 +299,7 @@ TOP SITE - MAIN CONTAINER
     gap: 0.5rem;
     filter: invert(0.6);
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .player .col:not([class*="fake-player"]) {
@@ -412,6 +413,15 @@ TOP SITE - MAIN CONTAINER
 
     .sidebar .sidebar-footer .sidebar__profile figcaption {
         display: inline;
+    }
+
+}
+
+@media screen and (min-width: 878px) {
+
+    .player .song__buttons {
+        flex-direction: row;
+        gap: 1rem;
     }
 
 }
