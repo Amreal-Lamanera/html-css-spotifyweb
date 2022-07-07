@@ -1,0 +1,13 @@
+{
+    "shortname": "Spotify",
+    "name": "Spotify Mockup",
+    "icons": [
+        {
+            "src": "img/spotify-icon.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "theme_color": "#797C80",
+    "display": "fullscreen"
+}
