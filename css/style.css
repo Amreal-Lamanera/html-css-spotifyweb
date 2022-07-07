@@ -65,7 +65,6 @@ body {
     height: 6px;
     background-color: #3A3A3A;
     border-radius: 1rem;
-    flex-grow: 1;
     align-self: center;
 }
 
@@ -348,10 +347,23 @@ TOP SITE - MAIN CONTAINER
 
 .player .fake-player .fake-bar {
     margin: 0 1rem;
+    flex-grow: 1;
 }
 
 .player .fake-player .fake-bar__inside {
     width: 17.5%;
+}
+
+.player .volume {
+    gap: 0.5rem;
+}
+
+.player .volume .fake-bar {
+    width: 5.25rem;
+}
+
+.player .volume .fake-bar__inside {
+    width: 20%;
 }
 
 /******************************************************
