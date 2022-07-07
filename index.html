@@ -33,6 +33,8 @@
             <!-- HEADER - SIDEBAR -->
             <header class="sidebar col-fix no-shrink flex col-col">
 
+                <!-- SOLUZIONE POCO FLESSIBILE: era meglio gestire una sidebar non divisa in 2, ma farci direttamente 3/4 div in column con la div playlist con grow oppure la div del profilo con margin top auto -->
+
                 <!-- SIDEBAR PARTE ALTA -->
                 <nav class="sidebar-content">
 
@@ -47,7 +49,7 @@
                                 </a>
                             </li>
 
-                            <li>
+                            <li class="active">
                                 <a href="#">
                                     <img src="img/home.svg" alt="spotify icon">
                                     <span>Home</span>
@@ -164,7 +166,7 @@
                         <span>Installa app</span>
                     </div>
 
-                    <figure>
+                    <figure class="sidebar__profile">
                         <img src="img/profile.svg" alt="">
                         <figcaption>John Doe</figcaption>
                     </figure>
