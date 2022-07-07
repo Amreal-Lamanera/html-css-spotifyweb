@@ -244,6 +244,10 @@ TOP SITE - MAIN CONTAINER
     MAIN - MAIN
 *******************************************************/
 
+.main-main {
+    color: #FFF;
+}
+
 /******************************************************
     SECTION UPGRADE
 *******************************************************/
@@ -262,7 +266,7 @@ TOP SITE - MAIN CONTAINER
     background-color: var(--main-color);
     overflow: auto;
     position: relative;
-    padding: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 /******************************************************
@@ -273,10 +277,10 @@ TOP SITE - MAIN CONTAINER
     position: sticky;
     top: 0;
     left: 0;
-    background-color: var(--main-color);
+    background-color: rgba(20, 25, 34, 0.9);
     color: var(--light-grey);
     font-weight: bold;
-    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
 }
 
 .container-nav .nav-list {
@@ -301,7 +305,9 @@ TOP SITE - MAIN CONTAINER
     CONTAINER - CONTENT
 *******************************************************/
 
-/* .container .container-content */
+.container-content .content__title {
+    padding-top: 2.5rem;
+}
 
 /******************************************************
     ASIDE PLAYER
