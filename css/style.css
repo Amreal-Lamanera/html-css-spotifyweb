@@ -274,10 +274,6 @@ TOP SITE - MAIN CONTAINER
 *******************************************************/
 
 .container .container-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: rgba(20, 25, 34, 0.9);
     color: var(--light-grey);
     font-weight: bold;
     padding-top: 1.5rem;
@@ -441,7 +437,7 @@ TOP SITE - MAIN CONTAINER
     MEDIA QUERY
 *******************************************************/
 
-/* BONUS */
+/* TODO: BONUS */
 @media screen and (min-width: 552px) {
     .player .col:not([class*="fake-player"]) {
         display: flex;
@@ -509,7 +505,20 @@ TOP SITE - MAIN CONTAINER
 @media screen and (min-width: 878px) {
 
     /******************************************************
-        CONTAINER NAV
+        CONTAINER - NAV
+    *******************************************************/
+
+    /* TODO: BONUS */
+    .container .container-nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: rgba(20, 25, 34, 0.9);
+        padding-bottom: 0.5rem;
+    }
+
+    /******************************************************
+        CONTAINER - CONTENT
     *******************************************************/
 
     .container-content .container-grid {
