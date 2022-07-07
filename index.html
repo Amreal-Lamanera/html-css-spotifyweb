@@ -26,13 +26,13 @@
 
     <!-- TODO: Debug class -->
 
-    <body class="debug flex col-col">
+    <body class="debug flex flex-col">
 
         <!-- MAIN - CONTAINER -->
         <div class="main-container flex">
 
             <!-- HEADER - SIDEBAR -->
-            <header class="sidebar col-fix no-shrink flex col-col">
+            <header class="sidebar col-fix no-shrink flex flex-col">
 
                 <!-- SOLUZIONE POCO FLESSIBILE: era meglio gestire una sidebar non divisa in 2, ma farci direttamente 3/4 div in column con la div playlist con grow oppure la div del profilo con margin top auto -->
 
@@ -42,7 +42,7 @@
                     <!-- PRIMA PARTE -->
                     <div class="sidebar-head">
 
-                        <ul class="flex col-col">
+                        <ul class="flex flex-col">
                             <li>
                                 <a href="#">
                                     <img src="img/favicon.ico" alt="spotify icon">
@@ -83,7 +83,7 @@
                         </a>
                         <span>Crea Playlist</span>
 
-                        <ul class="flex col-col">
+                        <ul class="flex flex-col">
                             <li>
                                 <a href="#">
                                     <span>
@@ -158,10 +158,10 @@
                 <!-- /SIDEBAR PARTE ALTA -->
 
                 <!-- SIDEBAR PARTE BASSA -->
-                <nav class="sidebar-footer flex col-col">
+                <nav class="sidebar-footer flex flex-col">
 
-                    <div class="download">
-                        <div class="container-arrow">
+                    <div class="download flex">
+                        <div class="container-arrow justify-center items-center">
                             <i class="fa-solid fa-arrow-down"></i>
                         </div>
                         <span>Installa app</span>
@@ -179,7 +179,7 @@
             <!-- /HEADER - SIDEBAR -->
 
 
-            <main class="main-main col-grow flex col-col">
+            <main class="main-main col-grow flex flex-col">
                 <section class="upgrade col-fix flex">
 
                     <a href="#" class="button">
@@ -188,7 +188,7 @@
 
                 </section>
 
-                <section class="container col-grow flex col-col">
+                <section class="container col-grow flex flex-col">
 
                     <nav class="container-nav col-fix">
                         CONTAINER NAV
@@ -521,21 +521,21 @@
 
                 <div class="song__img flex">
                     <img src="img/sinister.jpeg" alt="">
-                    <div>
+                    <div class="song__img__desc flex flex-col">
                         <span><strong>Sinister</strong></span>
                         <span>Brano</span>
                         <span>Nome</span>
                     </div>
                 </div>
 
-                <div class="song__buttons flex col-col">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-folder"></i>
+                <div class="song__buttons flex flex-col">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
                 </div>
 
             </div>
 
-            <div class="col col-mid flex col-col fake-player">
+            <div class="col col-mid flex flex-col fake-player">
 
                 <div class="fake-player__buttons">
 
@@ -548,7 +548,7 @@
                             <i class="fa-solid fa-backward-step"></i>
                         </li>
 
-                        <li class="rounded">
+                        <li class="rounded flex justify-center items-center">
                             <i class="fa-solid fa-play"></i>
                         </li>
 
