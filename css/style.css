@@ -6,6 +6,7 @@
     --dark: #080B12;
     --main-color: #141922;
     --grey: #282828;
+    --light-grey: #797C80;
 }
 
 body {
@@ -38,6 +39,12 @@ body {
 
 .justify-center {
     justify-content: center;
+}
+
+.active::before {
+    content: '';
+    background-color: yellowgreen;
+    position: absolute;
 }
 
 /* .col-fix {
@@ -105,12 +112,9 @@ TOP SITE - MAIN CONTAINER
 }
 
 .sidebar li.active::before {
-    content: '';
     display: none;
-    background-color: yellowgreen;
     width: 0.125rem;
     height: 2rem;
-    position: absolute;
     left: -1rem;
     top: -0.25rem;
 }
@@ -240,6 +244,29 @@ TOP SITE - MAIN CONTAINER
     MAIN - MAIN
 *******************************************************/
 
+.container-nav {
+    color: var(--light-grey);
+    font-weight: bold;
+}
+
+.container-nav .nav-list {
+    gap: 1.5rem;
+    /* TODO: FORSE */
+    flex-wrap: wrap;
+}
+
+.container-nav .nav-list li {
+    position: relative;
+}
+
+.container-nav .nav-list .active::before {
+    height: 0.125rem;
+    width: 2rem;
+    top: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /******************************************************
     SECTION UPGRADE
 *******************************************************/
@@ -290,8 +317,6 @@ TOP SITE - MAIN CONTAINER
     color: #FFF;
     padding: 0.5rem;
     align-items: center;
-    /* TODO: VERIFICARE SE SERVE */
-    /* min-height: 90px; */
 }
 
 .player .song {
