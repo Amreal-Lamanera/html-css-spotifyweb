@@ -238,6 +238,8 @@ TOP SITE - MAIN CONTAINER
     bottom: 0;
     right: 0;
     left: 0;
+    /* TODO: VERIFICARE SE SERVE */
+    /* min-height: 90px; */
 }
 
 .player .col-mid {
