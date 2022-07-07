@@ -305,8 +305,17 @@ TOP SITE - MAIN CONTAINER
     CONTAINER - CONTENT
 *******************************************************/
 
+.container-content {
+    padding: 2.5rem 1.25rem;
+}
+
 .container-content .content__title {
-    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.container-content .content__subtitle {
+    color: var(--light-grey);
 }
 
 /******************************************************
