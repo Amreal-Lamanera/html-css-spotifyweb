@@ -330,6 +330,10 @@ TOP SITE - MAIN CONTAINER
     padding-top: 1rem;
 }
 
+.container-content .container-grid img {
+    cursor: pointer;
+}
+
 .container-content .container-grid .rounded {
     border-radius: 100%;
     object-fit: cover;
@@ -503,9 +507,33 @@ TOP SITE - MAIN CONTAINER
 
 @media screen and (min-width: 878px) {
 
+    /******************************************************
+        CONTAINER NAV
+    *******************************************************/
+
+    .container-content .container-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /******************************************************
+        ASIDE - PLAYER
+    *******************************************************/
+
     .player .song__buttons {
         flex-direction: row;
         gap: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    /******************************************************
+        CONTAINER NAV
+    *******************************************************/
+
+    .container-content .container-grid {
+        grid-template-columns: repeat(6, 1fr);
     }
 
 }
