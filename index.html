@@ -28,6 +28,7 @@
 
     <body class="debug flex col-col">
 
+        <!-- MAIN - CONTAINER -->
         <div class="main-container flex">
 
             <!-- HEADER - SIDEBAR -->
@@ -511,13 +512,42 @@
             </main>
 
         </div>
+        <!-- /MAIN - CONTAINER -->
 
+        <!-- ASIDE PLAYER -->
         <aside class="player flex">
 
             <div class="col">CIAO</div>
-            <div class="col col-mid flex col-col">
 
-                CIAO
+            <div class="col col-mid flex col-col fake-player">
+
+                <div class="fake-player__buttons">
+
+                    <ul class="flex">
+                        <li>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-backward-step"></i>
+                        </li>
+
+                        <li class="rounded">
+                            <i class="fa-solid fa-play"></i>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-forward-step"></i>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                        </li>
+
+                    </ul>
+
+                </div>
+
                 <div class="fake-player flex">
                     <span>0:25</span>
                     <div class="fake-player__bar">
@@ -527,11 +557,14 @@
                 </div>
 
             </div>
+
             <div class="col">
                 CIAO
             </div>
 
         </aside>
+        <!-- /ASIDE PLAYER -->
+
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/b0485a66c8.js" crossorigin="anonymous"></script>
