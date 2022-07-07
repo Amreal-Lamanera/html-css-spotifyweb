@@ -244,9 +244,39 @@ TOP SITE - MAIN CONTAINER
     MAIN - MAIN
 *******************************************************/
 
-.container-nav {
+/******************************************************
+    SECTION UPGRADE
+*******************************************************/
+
+.main-container .upgrade {
+    background-color: var(--dark);
+    justify-content: flex-end;
+    padding: 1.5rem 1rem;
+}
+
+/******************************************************
+    SECTION - CONTAINER
+*******************************************************/
+
+.main-container .container {
+    background-color: var(--main-color);
+    overflow: auto;
+    position: relative;
+    padding: 1.5rem;
+}
+
+/******************************************************
+    CONTAINER - NAV
+*******************************************************/
+
+.container .container-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
     color: var(--light-grey);
     font-weight: bold;
+    padding: 0 2rem 2rem 2.5rem;
 }
 
 .container-nav .nav-list {
@@ -268,40 +298,10 @@ TOP SITE - MAIN CONTAINER
 }
 
 /******************************************************
-    SECTION UPGRADE
-*******************************************************/
-
-.main-container .upgrade {
-    background-color: var(--dark);
-    justify-content: flex-end;
-}
-
-/******************************************************
-    SECTION - CONTAINER
-*******************************************************/
-
-.main-container .container {
-    background-color: var(--main-color);
-    overflow: auto;
-    position: relative;
-}
-
-/******************************************************
-    CONTAINER - NAV
-*******************************************************/
-
-.container .container-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: var(--main-color);
-}
-
-/******************************************************
     CONTAINER - CONTENT
 *******************************************************/
 
-
+/* .container .container-content */
 
 /******************************************************
     ASIDE PLAYER
@@ -490,18 +490,18 @@ body.debug {
     color: blue;
 }
 
-.debug .player {
-    /* padding: 2rem; */
-}
+/* .debug .player {
+    padding: 2rem;
+} */
 
 /* .debug .sidebar {
     padding: 1rem;
 } */
 
-.debug .upgrade {
+/* .debug .upgrade {
     padding: 2rem;
-}
+} */
 
-.debug .container-nav {
+/* .debug .container-nav {
     padding: 1rem;
-}
+} */
