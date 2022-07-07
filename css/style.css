@@ -324,6 +324,12 @@ TOP SITE - MAIN CONTAINER
     display: none;
 }
 
+.player .fake-player {
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+
 .player .fake-player__buttons ul.flex {
     justify-content: center;
     align-items: center;
@@ -343,18 +349,17 @@ TOP SITE - MAIN CONTAINER
     cursor: pointer;
 }
 
-.player .col-mid {
-    gap: 1rem;
-    width: 195px;
-    margin: 0 auto;
+.player .fake-player__bar {
+    margin: 0 1rem 0 2.5rem;
 }
 
-.player .fake-player .fake-bar {
+.player .fake-player__bar .fake-bar {
     margin: 0 1rem;
     flex-grow: 1;
+    max-width: 600px;
 }
 
-.player .fake-player .fake-bar__inside {
+.player .fake-player__bar .fake-bar__inside {
     width: 17.5%;
 }
 
