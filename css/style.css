@@ -70,6 +70,7 @@ TOP SITE - MAIN CONTAINER
     padding: 0.5rem 1rem;
     justify-content: space-between;
     align-items: center;
+    max-width: 4rem;
 }
 
 .sidebar ul {
@@ -94,8 +95,8 @@ TOP SITE - MAIN CONTAINER
     color: #FFF;
 }
 
-.sidebar li:first-child img,
-.sidebar li:first-child span {
+.sidebar .sidebar-head li:first-child img,
+.sidebar .sidebar-head li:first-child span {
     filter: invert(1);
 }
 
@@ -162,6 +163,27 @@ TOP SITE - MAIN CONTAINER
     border-radius: 50%;
     width: 2rem;
     aspect-ratio: 1;
+}
+
+.sidebar .sidebar-body .sidebar-body__title {
+    padding: 1.75rem 0 1rem;
+    color: #FFF;
+}
+
+.sidebar .sidebar-body .add__playlist {
+    background-color: #656565;
+    padding: 0.5rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar .sidebar-body span {
+    color: #FFF;
+    filter: invert(0.2);
+}
+
+.sidebar .sidebar-body ul {
+    gap: 1.5rem;
 }
 
 
@@ -253,6 +275,7 @@ TOP SITE - MAIN CONTAINER
 
     .sidebar {
         align-items: flex-start;
+        max-width: 14rem;
     }
 
     .sidebar li a span,
@@ -260,11 +283,11 @@ TOP SITE - MAIN CONTAINER
         display: inline-block;
     }
 
-    .sidebar li:first-child img {
+    .sidebar .sidebar-head li:first-child img {
         width: 2.5rem;
     }
 
-    .sidebar li:first-child {
+    .sidebar .sidebar-head li:first-child {
         padding: 1rem 0 1rem;
     }
 
@@ -291,6 +314,10 @@ TOP SITE - MAIN CONTAINER
 
     .sidebar .sidebar-footer figcaption {
         display: inline;
+    }
+
+    .sidebar .sidebar-body .add__playlist {
+        display: inline-block;
     }
 
 }
