@@ -11,6 +11,7 @@
 
 body {
     height: 100vh;
+    min-width: 300px;
 }
 
 .grid {
@@ -100,15 +101,24 @@ TOP SITE - MAIN CONTAINER
     align-items: center;
     max-width: 4rem;
     color: #FFF;
-
 }
 
 .sidebar ul {
     gap: 0.5rem;
+    align-items: flex-start;
 }
 
 .sidebar li.active {
     position: relative;
+    opacity: 0.8;
+}
+
+.sidebar li.active:hover {
+    opacity: 1;
+}
+
+.sidebar .sidebar-head li:hover {
+    filter: none !important;
 }
 
 .sidebar li.active::before {
@@ -127,52 +137,50 @@ TOP SITE - MAIN CONTAINER
     width: 1.5rem;
 }
 
+/* NUOVO LOGO */
 .sidebar li:first-child img {
-    width: 2rem;
+    display: none;
+    width: 40px;
 }
 
+/* .sidebar li a h1,*/
 .sidebar .sidebar-body,
-.sidebar li a span,
-.sidebar li a h1 {
+.sidebar li a span {
     display: none;
 }
 
-.sidebar .sidebar-head li:first-child img,
-.sidebar .sidebar-head li:first-child span {
-    filter: invert(1);
-}
-
-.sidebar .sidebar-head li:nth-child(2) img,
-.sidebar .sidebar-head li:nth-child(2) span {
-    filter: invert(0.1);
-}
-
-.sidebar li:nth-child(n + 3) img,
-.sidebar li:nth-child(n + 3) span {
+.sidebar .sidebar-head li:nth-child(n + 2):not([class*="active"]) {
+    /* TODO: FILTRO SU LI NON ELEMENTI INTERNI */
     filter: invert(0.6);
 }
 
 .sidebar .sidebar-body .sidebar-body__title {
     padding: 1.75rem 0 1rem;
-    color: #FFF;
 }
 
 .sidebar .sidebar-body .add__playlist {
-    background-color: #656565;
-    padding: 0.5rem;
-    color: #000;
     margin-bottom: 1.5rem;
-    width: 2.5rem;
-    aspect-ratio: 1/1;
-    text-align: center;
+    cursor: pointer;
 }
 
-.sidebar .sidebar-body .add__playlist i {
-    vertical-align: middle;
+.sidebar .sidebar-body .add__playlist {
+    filter: invert(0.6);
 }
 
+.sidebar .sidebar-body .add__playlist:hover {
+    filter: none !important;
+}
 
-.sidebar .sidebar-body span {
+.sidebar .sidebar-body .playlist__btn {
+    padding-right: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.sidebar .sidebar-body li:hover {
+    filter: none !important;
+}
+
+.sidebar .sidebar-body li {
     filter: invert(0.6);
 }
 
@@ -184,10 +192,13 @@ TOP SITE - MAIN CONTAINER
     gap: 0.5rem;
 }
 
-.sidebar .download * {
+.sidebar .download {
     filter: invert(0.6);
     font-weight: bold;
-    vertical-align: middle;
+}
+
+.sidebar .download:hover {
+    filter: none !important;
 }
 
 .sidebar .download .container-arrow {
@@ -464,12 +475,15 @@ TOP SITE - MAIN CONTAINER
         display: inline-block;
     }
 
-    .sidebar .sidebar-head li:first-child img {
-        width: 2.5rem;
+    /* NUOVO LOGO */
+    .sidebar li:first-child img {
+        display: block;
+        width: 140px;
     }
 
-    .sidebar .sidebar-head li:first-child {
-        padding: 1rem 0 1rem;
+    /* NUOVO LOGO */
+    .sidebar li:nth-child(2) img {
+        display: none;
     }
 
     .sidebar .sidebar-body {
@@ -477,7 +491,7 @@ TOP SITE - MAIN CONTAINER
     }
 
     .sidebar .sidebar-body .add__playlist {
-        display: inline-block;
+        display: flex;
     }
 
     .sidebar .download span {

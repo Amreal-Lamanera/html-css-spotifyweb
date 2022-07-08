@@ -46,10 +46,16 @@
                     <div class="sidebar-head">
 
                         <ul class="flex flex-col">
+
                             <li>
                                 <a href="#">
-                                    <img src="img/favicon.ico" alt="spotify icon">
-                                    <h1>Spotify</h1>
+                                    <img src="img/logo.svg" alt="spotify logo">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="img/logo-small.svg" alt="spotify logo">
                                 </a>
                             </li>
 
@@ -81,10 +87,12 @@
                     <nav class="sidebar-body">
 
                         <h3 class="sidebar-body__title">PLAYLIST</h3>
-                        <a href="#">
-                            <div class="add__playlist"><i class="fa-solid fa-plus"></i></div>
-                        </a>
-                        <span>Crea Playlist</span>
+                        <div class="add__playlist flex items-center">
+                            <a href="#">
+                                <i class="fa-solid fa-square-plus playlist__btn"></i>
+                            </a>
+                            <span>Crea Playlist</span>
+                        </div>
 
                         <ul class="flex flex-col">
                             <li>
@@ -163,13 +171,11 @@
                 <!-- SIDEBAR PARTE BASSA -->
                 <nav class="sidebar-footer flex flex-col">
 
-                    <div class="download">
-                        <a href="#" class="flex items-center">
-                            <div class="container-arrow justify-center items-center">
-                                <i class="fa-solid fa-arrow-down"></i>
-                            </div>
-                            <span>Installa app</span>
-                        </a>
+                    <div class="download flex items-center">
+                        <div class="container-arrow justify-center items-center">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <span>Installa app</span>
                     </div>
 
                     <figure class="sidebar__profile">
