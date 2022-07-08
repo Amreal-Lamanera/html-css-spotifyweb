@@ -156,27 +156,35 @@ TOP SITE - MAIN CONTAINER
     width: 1.5rem;
 }
 
-.sidebar .sidebar-head li:hover {
-    filter: none !important;
-}
+/******************************************************
+    SIDEBAR - PARTE ALTA
+*******************************************************/
 
+/******************************************************
+    SIDEBAR - PARTE ALTA - HEAD
+*******************************************************/
 
-/* NUOVO LOGO */
 .sidebar li #logo__large {
     display: none;
     width: 40px;
 }
 
-/* .sidebar li a h1,*/
 .sidebar .sidebar-body,
 .sidebar li a span {
     display: none;
 }
 
 .sidebar .sidebar-head li:nth-child(n + 3):not([class*="active"]) {
-    /* TODO: FILTRO SU LI NON ELEMENTI INTERNI */
     filter: invert(0.6);
 }
+
+.sidebar .sidebar-head li:hover {
+    filter: none !important;
+}
+
+/******************************************************
+    SIDEBAR - PARTE ALTA - BODY
+*******************************************************/
 
 .sidebar .sidebar-body .sidebar-body__title {
     padding: 1.75rem 0 1rem;
@@ -200,19 +208,23 @@ TOP SITE - MAIN CONTAINER
     font-size: 2.5rem;
 }
 
-.sidebar .sidebar-body li:hover {
-    filter: none !important;
-}
-
 .sidebar .sidebar-body li {
     filter: invert(0.6);
+}
+
+.sidebar .sidebar-body li:hover {
+    filter: none !important;
 }
 
 .sidebar .sidebar-body ul {
     gap: 1.5rem;
 }
 
-.sidebar .download a {
+/******************************************************
+    SIDEBAR - PARTE BASSA - FOOTER
+*******************************************************/
+
+.sidebar .download {
     gap: 0.5rem;
 }
 
@@ -229,15 +241,10 @@ TOP SITE - MAIN CONTAINER
     margin-bottom: 2rem;
     border: 1.5px solid #FFF;
     border-radius: 100%;
-    display: flex;
     font-size: 0.5rem;
     width: 1rem;
-    height: 1rem;
+    aspect-ratio: 1;
     text-align: center;
-}
-
-.sidebar .download .container-arrow * {
-    vertical-align: middle;
 }
 
 .sidebar .download span {
@@ -247,7 +254,6 @@ TOP SITE - MAIN CONTAINER
 .sidebar .sidebar__profile::before {
     content: "";
     border-bottom: 1px solid #666;
-    display: block;
     margin: 1rem 0;
     width: 12rem;
     display: none;
@@ -267,7 +273,7 @@ TOP SITE - MAIN CONTAINER
 }
 
 .sidebar .sidebar-footer .sidebar__profile img {
-    background-color: grey;
+    background-color: var(--light-grey);
     border-radius: 50%;
     width: 2rem;
     aspect-ratio: 1;
@@ -431,6 +437,7 @@ TOP SITE - MAIN CONTAINER
 .player .fake-player {
     gap: 1rem;
     flex-grow: 1;
+    margin: 0 1rem;
 }
 
 
@@ -450,10 +457,6 @@ TOP SITE - MAIN CONTAINER
 
 .player .fake-player__buttons li {
     cursor: pointer;
-}
-
-.player .fake-player__bar {
-    margin: 0 1rem 0 2.5rem;
 }
 
 .player .fake-player__bar .fake-bar {
