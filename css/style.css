@@ -160,18 +160,24 @@ TOP SITE - MAIN CONTAINER
     SIDEBAR - CONTENT
 *******************************************************/
 
+/******************************************************
+    SIDEBAR - HEAD
+*******************************************************/
+
+.sidebar .sidebar-head {
+    margin-bottom: 1.75rem;
+}
+
 .sidebar li #logo__large {
     display: none;
     width: 40px;
 }
 
-
-
-.sidebar .sidebar-content__container li:nth-child(n + 3):not([class*="active"]) {
+.sidebar .sidebar-head li:nth-child(n + 3):not([class*="active"]) {
     filter: invert(0.6);
 }
 
-.sidebar .sidebar-content__container li:hover {
+.sidebar .sidebar-head li:hover {
     filter: none !important;
 }
 
@@ -190,7 +196,7 @@ SIDEBAR CONTENT - BODY
 }
 
 .sidebar .sidebar-body .sidebar-body__title {
-    padding: 1.75rem 0 1rem;
+    padding-bottom: 1rem;
 }
 
 .sidebar .sidebar-body .add__playlist {
