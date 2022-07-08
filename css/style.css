@@ -334,6 +334,10 @@ TOP SITE - MAIN CONTAINER
     position: relative;
 }
 
+.container-nav .nav-list li:hover {
+    color: #FFF;
+}
+
 .container-nav .nav-list .active::before {
     height: 0.125rem;
     width: 2rem;
