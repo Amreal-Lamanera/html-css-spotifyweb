@@ -5,7 +5,7 @@
         {
             "src": "img/spotify-icon.png",
             "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "78x80"
         }
     ],
     "theme_color": "#000000",
