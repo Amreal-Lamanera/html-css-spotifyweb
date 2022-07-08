@@ -157,11 +157,7 @@ TOP SITE - MAIN CONTAINER
 }
 
 /******************************************************
-    SIDEBAR - PARTE ALTA
-*******************************************************/
-
-/******************************************************
-    SIDEBAR - PARTE ALTA - HEAD
+    SIDEBAR - CONTENT
 *******************************************************/
 
 .sidebar li #logo__large {
@@ -169,22 +165,28 @@ TOP SITE - MAIN CONTAINER
     width: 40px;
 }
 
-.sidebar .sidebar-body,
-.sidebar li a span {
-    display: none;
+.sidebar-content__container {
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: auto;
 }
 
-.sidebar .sidebar-head li:nth-child(n + 3):not([class*="active"]) {
+.sidebar .sidebar-content__container li:nth-child(n + 3):not([class*="active"]) {
     filter: invert(0.6);
 }
 
-.sidebar .sidebar-head li:hover {
+.sidebar .sidebar-content__container li:hover {
     filter: none !important;
 }
 
 /******************************************************
-    SIDEBAR - PARTE ALTA - BODY
+SIDEBAR CONTENT - BODY
 *******************************************************/
+
+.sidebar .sidebar-body,
+.sidebar li a span {
+    display: none;
+}
 
 .sidebar .sidebar-body .sidebar-body__title {
     padding: 1.75rem 0 1rem;
@@ -221,7 +223,7 @@ TOP SITE - MAIN CONTAINER
 }
 
 /******************************************************
-    SIDEBAR - PARTE BASSA - FOOTER
+    SIDEBAR CONTENT - FOOTER
 *******************************************************/
 
 .sidebar .download {
@@ -257,6 +259,10 @@ TOP SITE - MAIN CONTAINER
     margin: 1rem 0;
     width: 12rem;
     display: none;
+}
+
+.sidebar .sidebar-content {
+    flex-basis: 100%;
 }
 
 .sidebar .sidebar-footer {
@@ -416,6 +422,7 @@ TOP SITE - MAIN CONTAINER
     padding: 0.5rem;
     padding-bottom: 1rem;
     align-items: center;
+    z-index: 2;
 }
 
 .player .song {
@@ -561,7 +568,7 @@ TOP SITE - MAIN CONTAINER
     }
 
     .sidebar .sidebar-body {
-        display: block;
+        display: flex;
     }
 
     .sidebar .sidebar-body .add__playlist {

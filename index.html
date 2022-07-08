@@ -39,13 +39,13 @@
 
                 <!-- SOLUZIONE POCO FLESSIBILE: era meglio gestire una sidebar non divisa in 2, ma farci direttamente 3/4 div in column con la div playlist con grow oppure la div del profilo con margin top auto -->
 
-                <!-- SIDEBAR PARTE ALTA -->
-                <nav class="sidebar-content">
+                <!-- SIDEBAR CONTENT -->
+                <nav class="sidebar-content flex flex-col">
 
-                    <!-- SIDEBAR PARTE ALTA HEAD -->
-                    <div class="sidebar-head">
+                    <div class="sidebar-content__container flex flex-col">
 
-                        <ul class="flex flex-col">
+                        <!-- SIDEBAR CONTENT - HEAD -->
+                        <ul class="sidebar-head flex flex-col">
 
                             <li>
                                 <a href="#">
@@ -80,111 +80,111 @@
                                 </a>
                             </li>
                         </ul>
+                        <!-- /SIDEBAR HEAD -->
+
+                        <!-- SIDEBAR CONTENT - BODY -->
+                        <nav class="sidebar-body flex-col">
+
+                            <h3 class="sidebar-body__title">PLAYLIST</h3>
+                            <div class="add__playlist flex items-center">
+                                <a href="#">
+                                    <i class="fa-solid fa-square-plus playlist__btn"></i>
+                                </a>
+                                <span>Crea Playlist</span>
+                            </div>
+
+                            <ul class="flex flex-col">
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Nome Playlist
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Super playlist con nome lunghissimo e bellissimo per vedere che la sidebar
+                                            non
+                                            si allarga mai oltre una misura predefinita
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Nome Playlist
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Nome Playlist
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Nome Playlist
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Nome Playlist
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Nome Playlist
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            Nome Playlist
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <!-- /SIDEBAR BODY -->
+
                     </div>
-                    <!-- /SIDEBAR HEAD -->
 
-                    <!-- SIDEBAR PARTE ALTA BODY -->
-                    <nav class="sidebar-body">
+                    <!-- SIDEBAR CONTENT - FOOTER -->
+                    <nav class="sidebar-footer flex flex-col">
 
-                        <h3 class="sidebar-body__title">PLAYLIST</h3>
-                        <div class="add__playlist flex items-center">
-                            <a href="#">
-                                <i class="fa-solid fa-square-plus playlist__btn"></i>
-                            </a>
-                            <span>Crea Playlist</span>
+                        <div class="download flex items-center">
+                            <div class="container-arrow flex justify-center items-center">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                            <span>Installa app</span>
                         </div>
 
-                        <ul class="flex flex-col">
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        Nome Playlist
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        Super playlist con nome lunghissimo e bellissimo per vedere che la sidebar non
-                                        si allarga mai oltre una misura predefinita
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        Nome Playlist
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        Nome Playlist
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        Nome Playlist
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        Nome Playlist
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        Nome Playlist
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        Nome Playlist
-                                    </span>
-                                </a>
-                            </li>
-
-                        </ul>
-
+                        <figure class="sidebar__profile">
+                            <img src="img/profile.svg" alt="">
+                            <figcaption>John Doe</figcaption>
+                        </figure>
                     </nav>
-                    <!-- /SIDEBAR BODY -->
+                    <!-- /SIDEBAR FOOTER -->
 
                 </nav>
-                <!-- /SIDEBAR PARTE ALTA -->
-
-                <!-- SIDEBAR PARTE BASSA FOOTER -->
-                <nav class="sidebar-footer flex flex-col">
-
-                    <div class="download flex items-center">
-                        <div class="container-arrow flex justify-center items-center">
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </div>
-                        <span>Installa app</span>
-                    </div>
-
-                    <figure class="sidebar__profile">
-                        <img src="img/profile.svg" alt="">
-                        <figcaption>John Doe</figcaption>
-                    </figure>
-
-                </nav>
-                <!-- /SIDEBAR FOOTER -->
+                <!-- /SIDEBAR CONTENT -->
 
             </header>
             <!-- /HEADER - SIDEBAR -->
