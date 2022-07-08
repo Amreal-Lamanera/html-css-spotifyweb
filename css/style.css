@@ -326,7 +326,6 @@ TOP SITE - MAIN CONTAINER
 
 .container-nav .nav-list {
     gap: 1.5rem;
-    /* TODO: FORSE */
     flex-wrap: wrap;
 }
 
