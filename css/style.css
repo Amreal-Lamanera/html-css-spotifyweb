@@ -165,11 +165,7 @@ TOP SITE - MAIN CONTAINER
     width: 40px;
 }
 
-.sidebar-content__container {
-    flex-grow: 1;
-    flex-basis: 0;
-    overflow: auto;
-}
+
 
 .sidebar .sidebar-content__container li:nth-child(n + 3):not([class*="active"]) {
     filter: invert(0.6);
@@ -182,6 +178,11 @@ TOP SITE - MAIN CONTAINER
 /******************************************************
 SIDEBAR CONTENT - BODY
 *******************************************************/
+.sidebar-body {
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: auto;
+}
 
 .sidebar .sidebar-body,
 .sidebar li a span {
@@ -568,7 +569,7 @@ SIDEBAR CONTENT - BODY
     }
 
     .sidebar .sidebar-body {
-        display: flex;
+        display: block;
     }
 
     .sidebar .sidebar-body .add__playlist {
