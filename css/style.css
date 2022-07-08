@@ -367,6 +367,25 @@ TOP SITE - MAIN CONTAINER
     text-align: center;
 }
 
+.container-content .content .layover__container {
+    position: relative;
+}
+
+.container-content .content .layover {
+    display: none;
+}
+
+.container-content .content:hover .layover {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+}
+
 .container-content .col__title {
     padding-top: 1rem;
 }
@@ -377,7 +396,6 @@ TOP SITE - MAIN CONTAINER
 
 .container-content .container-grid .rounded {
     border-radius: 100%;
-    object-fit: cover;
 }
 
 /******************************************************
