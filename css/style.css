@@ -604,6 +604,7 @@ TOP SITE - MAIN CONTAINER
         left: 0;
         background-color: rgba(20, 25, 34, 0.9);
         padding-bottom: 0.5rem;
+        z-index: 1;
     }
 
     /******************************************************
